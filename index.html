@@ -1,10 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>DevOps na prática</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Hadad | DevOps Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #1e293b, #0f172a 45%, #020617);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      margin: 0 auto 22px;
+      background: linear-gradient(135deg, #22d3ee, #2563eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      border: 3px solid #22d3ee;
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.35);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #cbd5e1;
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .status {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.15);
+      color: #86efac;
+      border: 1px solid rgba(34, 197, 94, 0.45);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-card {
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 18px;
+      padding: 18px 22px;
+      font-size: 17px;
+      font-weight: bold;
+      transition: 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      background: rgba(34, 211, 238, 0.16);
+      border-color: #22d3ee;
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.15);
+    }
+
+    .info-box {
+      margin-top: 32px;
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      text-align: left;
+    }
+
+    .info-box h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #67e8f9;
+      text-align: center;
+    }
+
+    .info-box p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 26px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      .link-card {
+        font-size: 15px;
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<h1>Atualização automática funcionando!</h1>
-<p>Deploy automático com Cloudflare Pages</p>
+  <main class="container">
+    <div class="avatar">🚀</div>
+
+    <h1>Gabriel Hadad</h1>
+
+    <p class="subtitle">
+      Projeto final de DevOps com CI/CD usando GitHub Actions e Cloudflare Pages.
+    </p>
+
+    <div class="status">
+      ✅ Deploy automático funcionando
+    </div>
+
+    <section class="links">
+      <a class="link-card" href="https://github.com/gabrielhadad/meu-site-devops" target="_blank">
+        💻 Repositório no GitHub
+      </a>
+
+      <a class="link-card" href="#" target="_blank">
+        🌐 Site publicado no Cloudflare Pages
+      </a>
+
+      <a class="link-card" href="https://github.com/gabrielhadad" target="_blank">
+        📁 Meu GitHub
+      </a>
+
+      <a class="link-card" href="mailto:gabriel.profissional600@gmail.com">
+        ✉️ Contato
+      </a>
+    </section>
+
+    <section class="info-box">
+      <h2>Sobre o projeto</h2>
+      <p>
+        Esta aplicação demonstra um fluxo de CI/CD na prática.
+        A cada alteração enviada para a branch main, o GitHub Actions executa o pipeline
+        e o Cloudflare Pages publica automaticamente a nova versão do site.
+      </p>
+    </section>
+
+    <div class="footer">
+      DevOps na prática • GitHub Actions • Cloudflare Pages
+    </div>
+  </main>
 </body>
 </html>
